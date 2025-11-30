@@ -7,7 +7,12 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors()); // required to allow frontend calls
+app.use(cors({
+  origin: "https://bhubaneswariportfolio.netlify.app", 
+  methods: ["POST"],
+  allowedHeaders: ["Content-Type"],
+}));
+ // required to allow frontend calls
 
 // 📌 Email Transporter (Gmail)
 const transporter = nodemailer.createTransport({
