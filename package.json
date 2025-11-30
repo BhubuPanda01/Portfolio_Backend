@@ -16,5 +16,10 @@
     "url": "https://github.com/BhubuPanda01/Portfolio_Backend/issues"
   },
   "homepage": "https://github.com/BhubuPanda01/Portfolio_Backend#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^9.0.0"
+  }
 }
